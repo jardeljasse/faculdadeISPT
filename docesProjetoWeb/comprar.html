@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edyGatchinhefeAgradaYhawe.csso</title>
+    <link rel="stylesheet" href="comprar.css">
+    <link rel="stylesheet" href="feAgradaYhawe.css">
+</head>
+
+<body>
+    <header>
+        <!-- logotipo do sitr-->
+
+        <a href="#" class="logotipo"> <img src="imagens/log22.png" alt="logotipo"><i class="Nao sei"></i></a>
+        <nav class="menubar">
+
+            <a href="web1.html">home</a>
+            <a  class="active"  href="#">Sobrenos</a>
+            <a href="FormularioGraca/formulariooContactnos.html">Faleconosco</a>
+            <a href="#menu">Cardapio</a>
+        </nav>
+
+        <div class="pesquisar">
+            <input class="srch" type="search" name="" placeholder="type to text">
+            <a href="#"><button class="btn">search</button></a>
+
+        </div>
+    </header>
+
+    <div class="rolagem">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+
+
+                <div class=" slide first">
+                    <img src="imagens/pag22.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="imagens/sal.jpg" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="imagens/pag22.jpg" alt="">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+
+                </div>
+
+
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn "></label>
+                <label for="radio3" class="manual-btn "></label>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 5000);
+
+
+    </script>
+    <!--jardel...........................................-->
+
+    <div class="cart">
+        <h2 class="cart-title">Selecionados</h2>
+        <!-- CONTENT SELECIONADAS-->
+        <div class="cart-content">
+            <img src="img/product1.jpg" alt="" class="cart-img">
+            <div class="detail-box">
+                <div class="cart-product-title">Bolo a Queijo</div>
+                <div class="cart-price">$500</div>
+                <input type="number" value="1" class="cart-quartity">
+            </div>
+            <!--Remove / Eliminar-->
+            <i class='bx bxs-trash-alt cart-remove' ></i> `;
+        </div>
+        <!--Total-->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <!--Buy button / Botao de Compra-->
+        <button type="button" class="btn-buy">Comprar</button>
+        <!--CART CLOSE / FECHAR SESSAO SELECIONADA ICONE-->
+        <i class='bx bx-x' id="close-cart"></i>
+        
+
+
+    </div>
+</div>
+</header>
+<!-- SHOP / COMPRA-->
+<section class="shop container">
+<h2 class="section-title">Compra de Productos</h2>
+
+<!-- CONTENT / CONTEUDO / COMPONENTES-->
+<div class="shop-content"> <!-- Onde as Fotos Estao-->
+    <!-- Image-1 -->
+    <div class="product-box">
+        <img src="img/product1.jpg" alt="" class="product-img">
+        <h2 class="product-title">Bolo a Queijo</h2>
+        <span class="price">$900</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <!-- Image-2 -->
+    <div class="product-box">
+        <img src="img/product2.jpg" alt="" class="product-img">
+        <h2 class="product-title">Bolo a Ananas</h2>
+        <span class="price">$1200</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <!-- Image-3 -->
+    <div class="product-box">
+        <img src="img/product3.jpg" alt="" class="product-img">
+        <h2 class="product-title">Bolo a Jus</h2>
+        <span class="price">$1600</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <!-- Image-4 -->
+    <div class="product-box">
+        <img src="img/product4.jpg" alt="" class="product-img">
+        <h2 class="product-title">Queijo Leite</h2>
+        <span class="price">$1100</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <!-- Image-5 -->
+    <div class="product-box">
+        <img src="img/product5.jpg" alt="" class="product-img">
+        <h2 class="product-title">Bolo Infantil</h2>
+        <span class="price">$1500</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <!-- Image-6 -->
+    <div class="product-box">
+        <img src="img/product6.jpg" alt="" class="product-img">
+        <h2 class="product-title">Bolo a Leite</h2>
+        <span class="price">$3300</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <!-- Image-7 -->
+    <div class="product-box">
+        <img src="img/product7.jpg" alt="" class="product-img">
+        <h2 class="product-title">Bolo a Queijo</h2>
+        <span class="price">$1080</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+    <!-- Image-8 -->
+    <div class="product-box">
+        <img src="img/product8.jpg" alt="" class="product-img">
+        <h2 class="product-title">Bolo a Queijo</h2>
+        <span class="price">$1340</span>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+</div>
+</section>
+<script src="javaScript/scrip.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- RODAPE-->
+    <div class="box-container">
+        <div class="box">
+            <h3>Locatiom</h3>
+            <a href="#">India</a>
+            <a href="#">Chingodzi</a>
+            <a href="#">Matema</a>
+            <a href="#">Chitima</a>
+
+        </div>
+        <div class="box">
+            <h3>Locatiom</h3>
+            <a href="#">links</a>
+            <a href="#">home</a>
+            <a href="#">disches</a>
+            <a href="#">menu</a>
+            <a href="#">reveiws</a>
+            <a href="#">Order</a>
+        </div>
+        <div class="box">
+            <h3>Contacat info</h3>
+            <a href="#">8873443434</a>
+            <a href="#">84349993343</a>
+            <a href="#">edgospel@gmail.com</a>
+            <a href="#">keltonpromo@gmail.com</a>
+
+
+        </div>
+
+        <div class="box">
+            <h3>Siganos</h3>
+            <a href="#"><img src="imagens/fb.png" alt=""></a>
+            <a href="#"><img src="imagens/gmai.png" alt=""></a>
+            <a href="#"><img src="imagens/ins.png" alt=""></a>
+            <a href="#">linkedin</a>
+            <HR>
+            </HR>
+        </div>
+        <div class="credit">copyright @ 2022 by <span>bunitao</span></div>
+
+    </div>
+    <hr class="a">
+    <p class="cio">copyright @ 2022 by wruetueu</p>
+
+</body>
+
+</html>

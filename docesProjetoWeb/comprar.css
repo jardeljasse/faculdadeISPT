@@ -1,0 +1,378 @@
+
+:root {
+    --green: #27ae60;
+    --black: #192a56;
+    --light-color: #666;
+    --box-shadow: 0.5rem 1.5rem rgba(0, 0, 0, .1);
+    --yellow: rgb(240, 0, 120);
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+
+}
+
+* {
+    font-family: 'Nunito' sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    outline: none;
+ 
+
+
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+section{
+
+    padding: 2rem 9%;
+}
+section:nth-child(even){
+    background: #fff;
+}
+
+
+
+header {
+/*  depois alterar  a bara*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 1;
+    background: #fff;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+header .logotipo i {
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: 100;
+
+    text-align: center;
+}
+header .menubar{
+float: left;
+display: flex;
+justify-content:left;
+align-items:baseline ;
+right: 10px;
+
+
+}
+header .menubar a {
+    font-size: 1.7rem;
+    border-radius: 2rem;
+    padding: .2rem 1rem;
+    color: var(--light-color);
+    margin-top: 1px;
+    margin-left: 2rem;
+    left: 2;
+    right: 2;
+
+}
+
+header .pesquisar{
+    width: 440px;
+    float: left;
+    margin-left: 120px;
+}
+header .srch{
+font-family: 'arial';
+width: 70%;
+background: transparent;
+border: 2px solid #f50087;
+margin-top: 13px;
+color: rgb(0, 0, 0);
+border-right: none;
+font-size: 16px;
+float: left;
+padding: 4px;
+border-bottom-left-radius: 5px;
+border-top-left-radius: 5px;
+}
+
+header .btn{
+width: 50px;
+height: 30px;
+background: #ff0080;
+border: 3px solid #fc008a;
+margin-top: 13px;
+color: #fff;
+font-size: 12px;
+border-bottom-left-radius: .5rem;
+border-top-left-radius: .5rem;
+}
+
+.btn:focus{
+
+    outline: none;
+
+}
+
+.srch:focus{
+outline: none;
+
+}
+/* adicionar cor ao pasar sobre os butoes*/
+header .menubar a.active,
+header .menubar a:hover {
+    color: rgb(253, 253, 253);
+    background: var(--yellow);
+
+}
+
+
+.imi{
+    padding: 1ch;;
+    margin-top: 12rem;
+    max-height:700%;
+    object-fit: 20rem;
+    width: 100%;
+}
+
+.rolagem{
+
+    margin-top: 6rem;
+left: 0;
+background: rgb(248, 203, 228);
+display: grid;
+grid-template-columns: repeat(auto-fit,ninmax(220px, auto));
+box-shadow: var(--box-shadow);
+border: 10px;
+border-color:#27ae60;
+}
+
+ /*esquerda  a direita barra de rolagem*/
+ .slider{
+    width: 500%;
+    height: 500px;
+    overflow: hidden;
+}
+
+
+ 
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 1280px;
+    height: 500px;
+    margin-top: 120px;
+    margin-left: 1px;
+}
+.navigation-manual{
+
+    position: absolute;
+    width: 800px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    left: 250px;
+
+}
+
+.manual-btn{
+    border: 1px solid #030303;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    justify-content: center;
+}
+.manual-btn:not(:last-child){
+margin-right: 40px;
+
+}
+
+.manual-btn:hover{
+background: #f76bf0;
+
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+} 
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+} 
+
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    left: 250px;
+    justify-content: center;
+    margin-top: 510px;
+    }
+    .navigation-auto div{
+        border: 1px solid #e973e9;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 1s;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right: 40px;
+    
+    }
+    
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background: #e46fda;
+    }
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background: #d653f0;
+    }
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background: #b552e2;
+    }
+    
+    .about .row{
+
+        display: flex;
+        flex-wrap: wrap;
+        gap:1.5rem ;
+        align-items: center;
+
+
+    }
+    .image1{
+        flex: 1 1 45rem;
+        width: 20%;
+        margin-left: -10%;
+        margin-top: 1%;
+    }
+
+.content{
+    flex: 1 1 45rem; 
+    text-align: center;
+    margin-top: -50rem;
+    margin-left: 24%;
+    font-size: 2rem;
+    font-family: arial;
+}
+.content h3{
+   color: #100055;
+   margin-left: 3%;
+}
+
+
+
+.letr h1{
+    margin-left: 70%;
+    margin-top: 6rem;
+    color: #192a56;
+    font-family: arial;
+    
+}
+
+.tat{
+    margin-left: 24%;
+    font-size: 5rem;
+     font-family: arial;
+}
+.tat p{
+    font-size:50rem ;
+       
+}
+.bot{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background:var(--black) ;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    margin-left: -35%;
+}
+
+.bot:hover{
+    background: var(--yellow);
+    letter-spacing: .1rem;
+}
+
+
+.box-container{
+    margin-top: 200rem;
+    
+
+background: rgb(253, 253, 253);
+display: grid;
+grid-template-columns: repeat(auto-fit,ninmax(220px, auto));
+box-shadow: 20px -10px rgb(223, 223, 223);
+border: 1px;
+border-color:#27ae60;   
+}
+
+
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(6rem, 1fr));
+    gap: 20rem;
+}
+
+.box-container .box h3{
+    padding: 0rem 100;
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-left: 160%;
+}
+
+.box-container .box a{
+
+padding: 15rem ; 
+
+    font-size: 1.5rem;
+    color: #150072;
+
+}
+.box-container .credit{
+
+padding: 20%;
+margin-top: 100%;
+    margin-left: -1120%;
+        font-size: 1rem;
+        color: var(--light-color);
+        
+    
+    }
+
+.box-container .box a:hover{   
+    text-decoration: underline;
+    color: var(--light-color);
+    }
+    .cio{
+margin-left: 50%;
+    }
+    .a{
+        color: var(--light-color);
+    }
+    
+
+/*HEADER secao jardel.........................................*/
